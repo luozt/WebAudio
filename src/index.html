@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Audio</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <style>
+  canvas{border: 1px solid #eee; margin-top: 10px;}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="well btns clearfix">
+      <audio id="audio" src="res/live.ogg" controls="controls">
+        你的浏览器不支持audio标签
+      </audio>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div><span class="label label-primary">分析声音</span></div>
+        <canvas id="canvas1" width="800" height="400"></canvas>
+
+        <div><span class="label label-info">分析录音-频域图</span></div>
+        <canvas id="canvas2" width="800" height="400"></canvas>
+
+        <div><span class="label label-info">分析录音-声波图</span></div>
+        <canvas id="canvas3" width="800" height="600"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="lib/easeljs-0.8.2.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
